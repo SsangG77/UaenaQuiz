@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UaenaQuiz">
         <activity
+            android:name=".eleventh"
+            android:exported="false" />
+        <activity
+            android:name=".tenth"
+            android:exported="false" />
+        <activity
+            android:name=".ninth"
+            android:exported="false" />
+        <activity
+            android:name=".problem"
+            android:exported="false" />
+        <activity
+            android:name=".ProblemList"
+            android:exported="false" />
+        <activity
             android:name=".eighth"
             android:exported="false" />
         <activity

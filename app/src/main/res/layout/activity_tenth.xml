@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".second"
+    tools:context=".tenth"
     android:background="#D7C0EC"
     >
 
@@ -49,7 +49,6 @@
         app:layout_constraintStart_toEndOf="@+id/arrow_home"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -75,7 +74,7 @@
             android:paddingTop="17dp"
             android:paddingRight="10dp"
             android:paddingBottom="17dp"
-            android:text="2. 아이유의 데뷔일짜는?"
+            android:text="10. 아이유의 어머니가 라식수술을\n 한것을 계기로 만들어진 곡은?"
             android:textColor="@color/white"
             android:textSize="29dp"
             android:textStyle="bold"
@@ -119,7 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="1993년 5월 16일"
+                    android:text="안경"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -128,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="1993년 9월 18일"
+                    android:text="시간의 바깥"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -137,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="2008년 9월 18일"
+                    android:text="드라마"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -146,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="2008년 5월 16일"
+                    android:text="푸르던"
                     android:textSize="27dp" />
             </RadioGroup>
 

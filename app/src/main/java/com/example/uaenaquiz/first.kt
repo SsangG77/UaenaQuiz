@@ -1,16 +1,13 @@
 package com.example.uaenaquiz
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.RadioButton
-import android.widget.Toast
 import com.example.uaenaquiz.databinding.ActivityFirstBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
@@ -58,7 +55,7 @@ class first : BaseActivity() {
 
         //메인화면창으로 이동
         binding.arrowHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ProblemList::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_exit, R.anim.none)
             finish()

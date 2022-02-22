@@ -30,10 +30,10 @@ class LastPage : AppCompatActivity() {
         mAdView.loadAd(adRequest)
 
         var answerCount = Integer.parseInt(intent.getIntExtra("answer",0).toString())
-        binding.answerCount.text = "정답 갯수: " + answerCount.toString()
+        binding.answerCount.text = "정답 수: " + answerCount.toString() + "/8"
 
         binding.button.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, ProblemList::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
             finish()

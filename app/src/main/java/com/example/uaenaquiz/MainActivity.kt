@@ -31,7 +31,7 @@ class MainActivity : BaseActivity() {
         mAdView.loadAd(adRequest)
 
         binding.startBtn.setOnClickListener {
-            val intent = Intent(this, first::class.java)
+            val intent = Intent(this, ProblemList::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
             finish()

@@ -12,7 +12,6 @@ import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.example.uaenaquiz.databinding.ActivityEighthBinding
-
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
@@ -60,7 +59,7 @@ open class eighth : BaseActivity() {
 
         //메인화면창으로 이동
         binding.arrowHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ProblemList::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_exit, R.anim.none)
             finish()
@@ -91,7 +90,7 @@ open class eighth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, LastPage::class.java)
+                            val intent = Intent(this, ninth::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -113,7 +112,7 @@ open class eighth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, LastPage::class.java)
+                            val intent = Intent(this, ninth::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)

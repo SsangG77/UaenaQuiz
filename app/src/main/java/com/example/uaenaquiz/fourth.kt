@@ -59,7 +59,7 @@ open class fourth : BaseActivity() {
 
         //메인화면창으로 이동
         binding.arrowHome.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ProblemList::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_exit, R.anim.none)
             finish()
