@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UaenaQuiz">
         <activity
+            android:name=".thirteenth"
+            android:exported="false" />
+        <activity
+            android:name=".twelfth"
+            android:exported="false" />
+        <activity
             android:name=".eleventh"
             android:exported="false" />
         <activity
@@ -18,9 +24,7 @@
         <activity
             android:name=".ninth"
             android:exported="false" />
-        <activity
-            android:name=".problem"
-            android:exported="false" />
+
         <activity
             android:name=".ProblemList"
             android:exported="false" />
@@ -50,7 +54,9 @@
             android:exported="false" />
         <activity
             android:name=".first"
-            android:exported="false" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+            android:exported="false" />
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />

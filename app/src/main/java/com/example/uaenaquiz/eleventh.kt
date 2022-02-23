@@ -8,20 +8,20 @@ import android.widget.RadioButton
 import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import com.example.uaenaquiz.databinding.ActivityTenthBinding
+import com.example.uaenaquiz.databinding.ActivityEleventhBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 /////////
-open class tenth : BaseActivity() {
+open class eleventh : BaseActivity() {
 
     lateinit var mAdView : AdView
 
     val TAG: String = "로그"
 
     //////
-    private var mBinding: ActivityTenthBinding? = null
+    private var mBinding: ActivityEleventhBinding? = null
 
     // 매번 null 체크를 할 필요 없이 편의성을 위해 바인딩 변수 재 선언
     private val binding get() = mBinding!!
@@ -33,12 +33,11 @@ open class tenth : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         var answer_text:String = "정답\n" +
-                "'Love Poem'서울 콘서트에서 아이유가 설명하였다."
+                "'[아이유의 집콕시그널] 신상 MD 탐구생활'에서 언급하는 부분이 나온다."
         var wrong_answer_text:String = "오답\n" +
-                "'Love Poem'서울 콘서트에서 아이유가 설명하였다."
+                "'[아이유의 집콕시그널] 신상 MD 탐구생활'에서 언급하는 부분이 나온다."
 
-        var setview = setContentView(R.layout.activity_tenth)
-
+        var setview = setContentView(R.layout.activity_eleventh)
 
 
         //fade in 애니메이션 객체 생성
@@ -46,7 +45,7 @@ open class tenth : BaseActivity() {
 
         super.onCreate(savedInstanceState)
         setview
-        mBinding = ActivityTenthBinding.inflate(layoutInflater)
+        mBinding = ActivityEleventhBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MobileAds.initialize(this) {}
@@ -74,7 +73,7 @@ open class tenth : BaseActivity() {
             val radio: RadioButton = findViewById(checkedId)
             when (radio) {
                 ///////RadioBtn
-                binding.firstRadioBtn -> {
+                binding.fourthRadioBtn -> {
                     binding.check.setOnClickListener {
                         var answer = binding.answer
                         answer.visibility = VISIBLE
@@ -86,7 +85,7 @@ open class tenth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, eleventh::class.java)
+                            val intent = Intent(this, twelfth::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -108,7 +107,7 @@ open class tenth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, eleventh::class.java)
+                            val intent = Intent(this, twelfth::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)

@@ -21,8 +21,8 @@ class ProblemList : AppCompatActivity() {
         Problem("8. '이지금'의 작곡가는?"),
         Problem("9. 곡 '자장가'의 모티브가 된 작품은?"),
         Problem("10. 아이유의 어머니가 라식수슬을 한것을 계기로 탄생한 곡은?"),
-        Problem("11. "),
-        Problem("12. "),
+        Problem("11. 아이유가 어릴때 부모님이 운영했던 문구점의 이름은?"),
+        Problem("12. 21년 12월 기준으로 팔레트에 출연하지 않은 게스트는?"),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,6 +54,8 @@ class ProblemList : AppCompatActivity() {
             7 -> startActivity(Intent(this, eighth::class.java))
             8 -> startActivity(Intent(this, ninth::class.java))
             9 -> startActivity(Intent(this, tenth::class.java))
+            10 -> startActivity(Intent(this, eleventh::class.java))
+            11 -> startActivity(Intent(this, twelfth::class.java))
         }
         overridePendingTransition(R.anim.horizon_enter, R.anim.none)
     }
