@@ -9,23 +9,40 @@
         <entry key="app/src/main/res/drawable/outline_home_24.xml" value="0.237" />
         <entry key="app/src/main/res/drawable/radius_btn.xml" value="0.2055" />
         <entry key="app/src/main/res/font/font.xml" value="0.34010416666666665" />
+        <entry key="app/src/main/res/layout/activity_eighteenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_eighth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_eleventh.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_fifteenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_fifth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_first.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_fourteenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_fourth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_last_page.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_nineteenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_ninth.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_problem.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_problem_list.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_seventeenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_seventh.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_sixteenth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_sixth.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_tenth.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_third.xml" value="0.30512820512820515" />
         <entry key="app/src/main/res/layout/activity_thirteenth.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_thirtieth.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_twelfth.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/activity_twentieth.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_eighth.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_fifth.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/activity_twenty_first.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/activity_twenty_fourth.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_ninth.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_second.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_seventh.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_sixth.xml" value="0.30512820512820515" />
+        <entry key="app/src/main/res/layout/activity_twenty_third.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/problem.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/problem_item.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2055" />

@@ -10,8 +10,6 @@
     app:cardElevation="30dp"
     >
 
-
-
     <TextView
         android:id="@+id/problem_item"
         android:layout_width="match_parent"

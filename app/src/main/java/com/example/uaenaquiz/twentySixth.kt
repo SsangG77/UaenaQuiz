@@ -8,21 +8,19 @@ import android.widget.RadioButton
 import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import com.example.uaenaquiz.databinding.ActivityThirteenthBinding
-import com.example.uaenaquiz.databinding.ActivityTwelfthBinding
+import com.example.uaenaquiz.databinding.ActivityTwentySixthBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 /////////
-open class thirteenth : BaseActivity() {
+open class twentySixth : BaseActivity() {
 
     lateinit var mAdView : AdView
 
     val TAG: String = "로그"
 
-    //////
-    private var mBinding: ActivityThirteenthBinding? = null
+    private var mBinding: ActivityTwentySixthBinding? = null
 
     // 매번 null 체크를 할 필요 없이 편의성을 위해 바인딩 변수 재 선언
     private val binding get() = mBinding!!
@@ -30,15 +28,14 @@ open class thirteenth : BaseActivity() {
     //애니메이션 객체
     lateinit var fadeInAnim : Animation
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         var answer_text:String = "정답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'나의 옛날이야기'는 2014년 발매된 아이유의 리메이크 1집 꽃갈피에 수록된 타이틀곡이다."
         var wrong_answer_text:String = "오답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'나의 옛날이야기'는 2014년 발매된 아이유의 리메이크 1집 꽃갈피에 수록된 타이틀곡이다."
 
-        var setview = setContentView(R.layout.activity_thirteenth)
+        var setview = setContentView(R.layout.activity_twenty_sixth)
 
 
         //fade in 애니메이션 객체 생성
@@ -46,7 +43,7 @@ open class thirteenth : BaseActivity() {
 
         super.onCreate(savedInstanceState)
         setview
-        mBinding = ActivityThirteenthBinding.inflate(layoutInflater)
+        mBinding = ActivityTwentySixthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MobileAds.initialize(this) {}
@@ -62,6 +59,7 @@ open class thirteenth : BaseActivity() {
             finish()
         }
 
+
         val check = binding.check
 
         var answerCount = Integer.parseInt(intent.getIntExtra("answer",0).toString())
@@ -73,7 +71,6 @@ open class thirteenth : BaseActivity() {
         binding.btnGroup.setOnCheckedChangeListener { _, checkedId ->
             val radio: RadioButton = findViewById(checkedId)
             when (radio) {
-                ///////RadioBtn
                 binding.thirdRadioBtn -> {
                     binding.check.setOnClickListener {
                         var answer = binding.answer
@@ -85,8 +82,7 @@ open class thirteenth : BaseActivity() {
 
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
-                            //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, twentySeventh::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -105,8 +101,7 @@ open class thirteenth : BaseActivity() {
 
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
-                            //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, twentySeventh::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -116,5 +111,7 @@ open class thirteenth : BaseActivity() {
                 }
             }
         }
+
+
     }
 }

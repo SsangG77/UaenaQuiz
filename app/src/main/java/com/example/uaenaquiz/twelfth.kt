@@ -33,9 +33,9 @@ open class twelfth : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         var answer_text:String = "정답\n" +
-                "'[아이유의 집콕시그널] 신상 MD 탐구생활'에서 언급하는 부분이 나온다."
+                "21년 12월 기준으로 출연한 게스트는 2AM, ITZY, 이승기, 변요한, 공유, 로꼬, AKMU, 샤이니, 적재 이다."
         var wrong_answer_text:String = "오답\n" +
-                "'[아이유의 집콕시그널] 신상 MD 탐구생활'에서 언급하는 부분이 나온다."
+                "21년 12월 기준으로 출연한 게스트는 2AM, ITZY, 이승기, 변요한, 공유, 로꼬, AKMU, 샤이니, 적재 이다."
 
         var setview = setContentView(R.layout.activity_twelfth)
 
@@ -85,7 +85,7 @@ open class twelfth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, LastPage::class.java)
+                            val intent = Intent(this, thirteenth::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -107,7 +107,7 @@ open class twelfth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, LastPage::class.java)
+                            val intent = Intent(this, thirteenth::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)

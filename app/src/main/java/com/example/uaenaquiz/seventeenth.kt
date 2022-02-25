@@ -8,21 +8,20 @@ import android.widget.RadioButton
 import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import com.example.uaenaquiz.databinding.ActivityThirteenthBinding
-import com.example.uaenaquiz.databinding.ActivityTwelfthBinding
+import com.example.uaenaquiz.databinding.*
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 /////////
-open class thirteenth : BaseActivity() {
+open class seventeenth : BaseActivity() {
 
     lateinit var mAdView : AdView
 
     val TAG: String = "로그"
 
     //////
-    private var mBinding: ActivityThirteenthBinding? = null
+    private var mBinding: ActivitySeventeenthBinding? = null
 
     // 매번 null 체크를 할 필요 없이 편의성을 위해 바인딩 변수 재 선언
     private val binding get() = mBinding!!
@@ -34,11 +33,11 @@ open class thirteenth : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         var answer_text:String = "정답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'[충격] 아이유 탈민초파 선언?! 아이유에게 궁금한 8가지 Q & A'에서 아이유가 언급한다."
         var wrong_answer_text:String = "오답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'[충격] 아이유 탈민초파 선언?! 아이유에게 궁금한 8가지 Q & A'에서 아이유가 언급한다."
 
-        var setview = setContentView(R.layout.activity_thirteenth)
+        var setview = setContentView(R.layout.activity_seventeenth)
 
 
         //fade in 애니메이션 객체 생성
@@ -46,7 +45,7 @@ open class thirteenth : BaseActivity() {
 
         super.onCreate(savedInstanceState)
         setview
-        mBinding = ActivityThirteenthBinding.inflate(layoutInflater)
+        mBinding = ActivitySeventeenthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MobileAds.initialize(this) {}
@@ -74,7 +73,7 @@ open class thirteenth : BaseActivity() {
             val radio: RadioButton = findViewById(checkedId)
             when (radio) {
                 ///////RadioBtn
-                binding.thirdRadioBtn -> {
+                binding.fourthRadioBtn -> {
                     binding.check.setOnClickListener {
                         var answer = binding.answer
                         answer.visibility = VISIBLE
@@ -86,7 +85,7 @@ open class thirteenth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, eighteenth::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -106,7 +105,7 @@ open class thirteenth : BaseActivity() {
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
                             //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, eighteenth::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -116,5 +115,7 @@ open class thirteenth : BaseActivity() {
                 }
             }
         }
+
+
     }
 }

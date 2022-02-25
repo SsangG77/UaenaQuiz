@@ -1,28 +1,31 @@
 package com.example.uaenaquiz
 
-
+import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.RadioButton
 import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import com.example.uaenaquiz.databinding.ActivityThirteenthBinding
-import com.example.uaenaquiz.databinding.ActivityTwelfthBinding
+import com.example.uaenaquiz.databinding.ActivityEighteenthBinding
+
+
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 /////////
-open class thirteenth : BaseActivity() {
+open class eighteenth : BaseActivity() {
 
     lateinit var mAdView : AdView
 
     val TAG: String = "로그"
 
-    //////
-    private var mBinding: ActivityThirteenthBinding? = null
+    private var mBinding: ActivityEighteenthBinding? = null
 
     // 매번 null 체크를 할 필요 없이 편의성을 위해 바인딩 변수 재 선언
     private val binding get() = mBinding!!
@@ -34,11 +37,11 @@ open class thirteenth : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         var answer_text:String = "정답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'지안'의 뜻은 '이를 지'에 '편안할 안'이다. '나의 아저씨'5화에서 언급한다."
         var wrong_answer_text:String = "오답\n" +
-                "'[아이유의 집콕시그널] 옴망진창 팬미팅'에서 언급하는 부분이 나온다."
+                "'지안'의 뜻은 '이를 지'에 '편안할 안'이다. '나의 아저씨'5화에서 언급한다."
 
-        var setview = setContentView(R.layout.activity_thirteenth)
+        var setview = setContentView(R.layout.activity_eighteenth)
 
 
         //fade in 애니메이션 객체 생성
@@ -46,7 +49,7 @@ open class thirteenth : BaseActivity() {
 
         super.onCreate(savedInstanceState)
         setview
-        mBinding = ActivityThirteenthBinding.inflate(layoutInflater)
+        mBinding = ActivityEighteenthBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MobileAds.initialize(this) {}
@@ -62,6 +65,7 @@ open class thirteenth : BaseActivity() {
             finish()
         }
 
+
         val check = binding.check
 
         var answerCount = Integer.parseInt(intent.getIntExtra("answer",0).toString())
@@ -73,8 +77,7 @@ open class thirteenth : BaseActivity() {
         binding.btnGroup.setOnCheckedChangeListener { _, checkedId ->
             val radio: RadioButton = findViewById(checkedId)
             when (radio) {
-                ///////RadioBtn
-                binding.thirdRadioBtn -> {
+                binding.firstRadioBtn -> {
                     binding.check.setOnClickListener {
                         var answer = binding.answer
                         answer.visibility = VISIBLE
@@ -85,13 +88,14 @@ open class thirteenth : BaseActivity() {
 
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
-                            //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, nineteenth::class.java)
                             intent.putExtra("answer",  answerCount+1)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
                             finish()
                         }
+
+
                     }
                 }
                 else -> {
@@ -105,8 +109,7 @@ open class thirteenth : BaseActivity() {
 
                         //다음문제로 이동
                         binding.arrowForward.setOnClickListener {
-                            //////LastPage
-                            val intent = Intent(this, fourteenth::class.java)
+                            val intent = Intent(this, nineteenth::class.java)
                             intent.putExtra("answer", answerCount+0)
                             startActivity(intent)
                             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
@@ -116,5 +119,7 @@ open class thirteenth : BaseActivity() {
                 }
             }
         }
+
+
     }
 }

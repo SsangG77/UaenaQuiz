@@ -10,6 +10,57 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UaenaQuiz">
         <activity
+            android:name=".thirtieth"
+            android:exported="false" />
+        <activity
+            android:name=".twentyNinth"
+            android:exported="false" />
+        <activity
+            android:name=".twentyEighth"
+            android:exported="false" />
+        <activity
+            android:name=".twentySeventh"
+            android:exported="false" />
+        <activity
+            android:name=".twentySixth"
+            android:exported="false" />
+        <activity
+            android:name=".twentyFifth"
+            android:exported="false" />
+        <activity
+            android:name=".twentyFourth"
+            android:exported="false" />
+        <activity
+            android:name=".twentyThird"
+            android:exported="false" />
+        <activity
+            android:name=".twentySecond"
+            android:exported="false" />
+        <activity
+            android:name=".twentyFirst"
+            android:exported="false" />
+        <activity
+            android:name=".twentieth"
+            android:exported="false" />
+        <activity
+            android:name=".nineteenth"
+            android:exported="false" />
+        <activity
+            android:name=".eighteenth"
+            android:exported="false" />
+        <activity
+            android:name=".seventeenth"
+            android:exported="false" />
+        <activity
+            android:name=".sixteenth"
+            android:exported="false" />
+        <activity
+            android:name=".fifteenth"
+            android:exported="false" />
+        <activity
+            android:name=".fourteenth"
+            android:exported="false" />
+        <activity
             android:name=".thirteenth"
             android:exported="false" />
         <activity
@@ -24,7 +75,6 @@
         <activity
             android:name=".ninth"
             android:exported="false" />
-
         <activity
             android:name=".ProblemList"
             android:exported="false" />
@@ -54,9 +104,7 @@
             android:exported="false" />
         <activity
             android:name=".first"
-            android:exported="false" />
-
-        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+            android:exported="false" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />

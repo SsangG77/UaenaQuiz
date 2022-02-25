@@ -30,7 +30,7 @@ class LastPage : AppCompatActivity() {
         mAdView.loadAd(adRequest)
 
         var answerCount = Integer.parseInt(intent.getIntExtra("answer",0).toString())
-        binding.answerCount.text = "정답 수: " + answerCount.toString() + "/12"
+        binding.answerCount.text = "정답 수: " + answerCount.toString() + "/30"
 
         binding.button.setOnClickListener {
             var intent = Intent(this, ProblemList::class.java)
