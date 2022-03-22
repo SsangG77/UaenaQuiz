@@ -10,112 +10,124 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UaenaQuiz">
-
-
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.thirtieth"
+            android:name=".thirtyFourth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyNinth"
+            android:name=".thirtiyThird"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyEighth"
+            android:name=".thirtySecond"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentySeventh"
+            android:name=".thirtyFirst"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentySixth"
+            android:name=".thirty_first"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyFifth"
+            android:name=".thirtieth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyFourth"
+            android:name=".twentyNinth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyThird"
+            android:name=".twentyEighth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentySecond"
+            android:name=".twentySeventh"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentyFirst"
+            android:name=".twentySixth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twentieth"
+            android:name=".twentyFifth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.nineteenth"
+            android:name=".twentyFourth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.eighteenth"
+            android:name=".twentyThird"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.seventeenth"
+            android:name=".twentySecond"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.sixteenth"
+            android:name=".twentyFirst"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.fifteenth"
+            android:name=".twentieth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.fourteenth"
+            android:name=".nineteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.thirteenth"
+            android:name=".eighteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.twelfth"
+            android:name=".seventeenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.eleventh"
+            android:name=".sixteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.tenth"
+            android:name=".fifteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.ninth"
+            android:name=".fourteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.ProblemList"
+            android:name=".thirteenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.eighth"
+            android:name=".twelfth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.seventh"
+            android:name=".eleventh"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.sixth"
+            android:name=".tenth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.fifth"
+            android:name=".ninth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.LastPage"
+            android:name=".ProblemList"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.fourth"
+            android:name=".eighth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.third"
+            android:name=".seventh"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.second"
+            android:name=".sixth"
             android:exported="false" />
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.first"
+            android:name=".fifth"
             android:exported="false" />
-        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity
+            android:name=".LastPage"
+            android:exported="false" />
+        <activity
+            android:name=".fourth"
+            android:exported="false" />
+        <activity
+            android:name=".third"
+            android:exported="false" />
+        <activity
+            android:name=".second"
+            android:exported="false" />
+        <activity
+            android:name=".first"
+            android:exported="false" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <!-- Real AdMob app ID: ca-app-pub-3545555975398754~5411865355 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
 
         <activity
-            android:name="com.UaenaQuiz.uaenaquiz.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

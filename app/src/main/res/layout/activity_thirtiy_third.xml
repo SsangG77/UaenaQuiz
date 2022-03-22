@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".thirtieth"
+    tools:context=".thirtyThird"
     android:background="#D7C0EC"
     >
 
@@ -75,7 +75,7 @@
             android:paddingTop="17dp"
             android:paddingRight="10dp"
             android:paddingBottom="17dp"
-            android:text="30. 아이유가 연기로 여자 신인상을 \n받을수 있었던 작품은?"
+            android:text="33. 아이유가 좋아하는 디즈니 캐릭터는?"
             android:textColor="@color/white"
             android:textSize="29dp"
             android:textStyle="bold"
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="드림하이"
+                    android:text="라푼젤"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="나의 아저씨"
+                    android:text="모아나"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -137,7 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="20dp"
-                    android:text="최고다 이순신"
+                    android:text="엘사"
                     android:textSize="27dp" />
 
                 <RadioButton
@@ -146,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minHeight="48dp"
-                    android:text="프로듀사"
+                    android:text="자스민"
                     android:textSize="27dp" />
             </RadioGroup>
 

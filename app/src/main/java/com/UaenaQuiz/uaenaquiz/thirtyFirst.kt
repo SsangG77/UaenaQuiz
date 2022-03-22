@@ -9,16 +9,16 @@ import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.UaenaQuiz.App
-import com.UaenaQuiz.uaenaquiz.databinding.ActivityThirtiethBinding
+import com.UaenaQuiz.uaenaquiz.databinding.ActivityThirtyFirstBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
 /////////
-open class thirtieth : BaseActivity() {
+open class thirtyFirst : BaseActivity() {
     lateinit var mAdView : AdView
-    private var mBinding: ActivityThirtiethBinding? = null
+    private var mBinding: ActivityThirtyFirstBinding? = null
     private val binding get() = mBinding!!
     //애니메이션 객체
     lateinit var fadeInAnim : Animation
@@ -26,17 +26,19 @@ open class thirtieth : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val checkBoolean : String = thirtiethBoolean
+        //
+        val checkBoolean : String = thirtyfirstBoolean
 
-        var answer_text:String = "정답\n" +
-                "2013년 KBS 연기대상에서 '최고다 이순신'으로 여자 신인상을 수상하였다."
-        var wrong_answer_text:String = "오답\n" +
-                "2013년 KBS 연기대상에서 '최고다 이순신'으로 여자 신인상을 수상하였다."
+        //
+        val answer_text:String = "정답\n" +
+                "[IU TV] 100만 구독 달성 기념!! '이지금에게 물어봐'에서 일기장이든 금고가 최애템이라고 얘기한다."
+        val wrong_answer_text:String = "오답\n" +
+                "[IU TV] 100만 구독 달성 기념!! '이지금에게 물어봐'에서 일기장이든 금고가 최애템이라고 얘기한다."
 
         //fade in 애니메이션 객체 생성
         fadeInAnim = AnimationUtils.loadAnimation(this, R.anim.change_activity)
 
-        mBinding = ActivityThirtiethBinding.inflate(layoutInflater)
+        mBinding = ActivityThirtyFirstBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val adView = AdView(this)
@@ -59,7 +61,7 @@ open class thirtieth : BaseActivity() {
         binding.btnGroup.setOnCheckedChangeListener { _, checkedId ->
             val radio: RadioButton = findViewById(checkedId)
             when (radio) {
-                binding.thirdRadioBtn -> {
+                binding.firstRadioBtn -> {
                     binding.check.setOnClickListener {
                         var answer = binding.answer
                         answer.visibility = VISIBLE
@@ -92,7 +94,8 @@ open class thirtieth : BaseActivity() {
         binding.check.isEnabled = App.prefs.getBoolean(checkBoolean, true)
         //다음문제로 이동
         binding.arrowForward.setOnClickListener {
-            val intent = Intent(this, thirtyFirst::class.java)
+            //
+            val intent = Intent(this, thirtySecond::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
             finish()

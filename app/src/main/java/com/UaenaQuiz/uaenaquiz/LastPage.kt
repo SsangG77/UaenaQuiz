@@ -37,22 +37,21 @@ class LastPage : BaseActivity() {
 
         binding.answerCount.text = "${App.prefs.getCount("")} / 30"
 
-        var lastMent = binding.lastMent.text
 
         if(App.prefs.getCount("").toInt()  <= 5) {
-            lastMent = "유애나인지 의심이 되네요..."
+            binding.lastMent.text = "유애나인지 의심이 되네요..."
         }
         if (App.prefs.getCount("").toInt() == 30) {
-            lastMent = "혹시 아이유 본인?"
+            binding.lastMent.text = "혹시 아이유 본인?"
         }
         if (App.prefs.getCount("").toInt() in 25..29) {
-            lastMent = "진정한 유애나이시네요!"
+            binding.lastMent.text = "진정한 유애나이시네요!"
         }
         if(App.prefs.getCount("").toInt() in 6..15) {
-            lastMent = "다시 복습하고 오세요!"
+            binding.lastMent.text = "다시 복습하고 오세요!"
         }
         if(App.prefs.getCount("").toInt() in 16..24) {
-            lastMent = "다음에는 만점 도전해봐요~"
+            binding.lastMent.text = "다음에는 만점 도전해봐요~"
         }
 
         App.prefs.getCount("0")
@@ -86,6 +85,11 @@ class LastPage : BaseActivity() {
         App.prefs.getBoolean(twentyeighthBoolean, true)
         App.prefs.getBoolean(twentyNinthBoolean, true)
         App.prefs.getBoolean(thirtiethBoolean, true)
+        App.prefs.getBoolean(thirtyfirstBoolean, true)
+        App.prefs.getBoolean(thirtySecondBoolean, true)
+        App.prefs.getBoolean(thirtyThirdBoolean, true)
+        App.prefs.getBoolean(thirtyFourthBoolean, true)
+
 
         binding.button.setOnClickListener {
             App.prefs.setCount("0")
@@ -119,6 +123,11 @@ class LastPage : BaseActivity() {
             App.prefs.setBoolean(twentyeighthBoolean, true)
             App.prefs.setBoolean(twentyNinthBoolean, true)
             App.prefs.setBoolean(thirtiethBoolean, true)
+            App.prefs.setBoolean(thirtyfirstBoolean, true)
+            App.prefs.setBoolean(thirtySecondBoolean, true)
+            App.prefs.setBoolean(thirtyThirdBoolean, true)
+            App.prefs.setBoolean(thirtyFourthBoolean, true)
+
 
             val intent = Intent(this, ProblemList::class.java)
             startActivity(intent)

@@ -41,6 +41,10 @@ class ProblemList : AppCompatActivity() {
         Problem("28. god의 곡중 아이유가 피처링한 곡은?"),
         Problem("29. 첫 OST로 참여한 작품의 이름은?"),
         Problem("30. 아이유가 연기로 여자 신인상을 받을 수 있었던 작품은?"),
+        Problem("31. 아이유의 최애템은?"),
+        Problem("32. 보통이의 극중 나이는?"),
+        Problem("33. 아이유가 좋아하는 디즈니캐릭터는?"),
+        Problem("34. 아이유가 자신있어하는 신체부위는?"),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -92,6 +96,10 @@ class ProblemList : AppCompatActivity() {
             27 -> startActivity(Intent(this, twentyEighth::class.java))
             28 -> startActivity(Intent(this, twentyNinth::class.java))
             29 -> startActivity(Intent(this, thirtieth::class.java))
+            30 -> startActivity(Intent(this, thirtyFirst::class.java))
+            31 -> startActivity(Intent(this, thirtySecond::class.java))
+            32 -> startActivity(Intent(this, thirtyThird::class.java))
+
         }
         overridePendingTransition(R.anim.horizon_enter, R.anim.none)
     }
