@@ -10,7 +10,6 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.UaenaQuiz.App
 import com.UaenaQuiz.uaenaquiz.databinding.ActivityThirtySecondBinding
-
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
@@ -97,7 +96,7 @@ open class thirtySecond : BaseActivity() {
         //다음문제로 이동
         binding.arrowForward.setOnClickListener {
             //
-            val intent = Intent(this, thirtyThird::class.java)
+            val intent = Intent(this, thirtiyThird::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
             finish()

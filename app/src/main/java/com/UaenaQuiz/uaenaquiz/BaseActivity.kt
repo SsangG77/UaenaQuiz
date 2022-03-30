@@ -47,6 +47,12 @@ open class BaseActivity: AppCompatActivity() {
         val thirtySecondBoolean = "thirtySecondBoolean"
         val thirtyThirdBoolean = "thirtyThirdBoolean"
         val thirtyFourthBoolean = "thirtyFourthBoolean"
+        val thirtyFifthBoolean = "thirtyFifthBoolean"
+        val thirtySixthBoolean = "thirtySixthBoolean"
+        val thirtySeventhBoolean = "thirtySeventhBoolean"
+        val thirtyEighthBoolean = "thirtyEighthBoolean"
+        val thirtyNinthBoolean = "thirtyNinthBoolean"
+        val fourtyBoolean = "fourtyBoolean"
 
 
     }

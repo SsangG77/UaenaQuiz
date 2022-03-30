@@ -97,7 +97,7 @@ open class thirtyFourth : BaseActivity() {
         //다음문제로 이동
         binding.arrowForward.setOnClickListener {
 //            //
-            val intent = Intent(this, LastPage::class.java)
+            val intent = Intent(this, thirtyFifth::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.horizon_enter, R.anim.none)
             finish()

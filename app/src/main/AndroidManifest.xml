@@ -11,6 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UaenaQuiz">
         <activity
+            android:name=".fourty"
+            android:exported="false" />
+        <activity
+            android:name=".thirtyNinth"
+            android:exported="false" />
+        <activity
+            android:name=".thirtyEighth"
+            android:exported="false" />
+        <activity
+            android:name=".thirtySeventh"
+            android:exported="false" />
+        <activity
+            android:name=".thirtySixth"
+            android:exported="false" />
+        <activity
+            android:name=".thirtyFifth"
+            android:exported="false" />
+        <activity
             android:name=".thirtyFourth"
             android:exported="false" />
         <activity

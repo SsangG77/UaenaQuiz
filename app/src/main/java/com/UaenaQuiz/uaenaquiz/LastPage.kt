@@ -17,7 +17,6 @@ class LastPage : BaseActivity() {
     lateinit var mAdView : AdView
     private var mBinding: ActivityLastPageBinding? = null
 
-    // 매번 null 체크를 할 필요 없이 편의성을 위해 바인딩 변수 재 선언
     private val binding get() = mBinding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,24 +34,27 @@ class LastPage : BaseActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
 
-        binding.answerCount.text = "${App.prefs.getCount("")} / 30"
+        binding.answerCount.text = "${App.prefs.getCount("")} / 40"
 
 
-        if(App.prefs.getCount("").toInt()  <= 5) {
-            binding.lastMent.text = "유애나인지 의심이 되네요..."
+        when(App.prefs.getCount("").toInt()) {
+            in 0..5 -> {
+                binding.lastMent.text = "유애나인지 의심이 되네요..."
+            }
+            in 30..35 -> {
+                binding.lastMent.text = "다음에는 만점 도전해봐요~"
+            }
+            in 36..39 -> {
+                binding.lastMent.text = "진정한 유애나이시네요!"
+            }
+            40 -> {
+                binding.lastMent.text = "혹시 아이유 본인이신가요?"
+            }
+            else -> {
+                binding.lastMent.text = "다시 복습하고 오세요!"
+            }
         }
-        if (App.prefs.getCount("").toInt() == 30) {
-            binding.lastMent.text = "혹시 아이유 본인?"
-        }
-        if (App.prefs.getCount("").toInt() in 25..29) {
-            binding.lastMent.text = "진정한 유애나이시네요!"
-        }
-        if(App.prefs.getCount("").toInt() in 6..15) {
-            binding.lastMent.text = "다시 복습하고 오세요!"
-        }
-        if(App.prefs.getCount("").toInt() in 16..24) {
-            binding.lastMent.text = "다음에는 만점 도전해봐요~"
-        }
+
 
         App.prefs.getCount("0")
         App.prefs.getBoolean(firstBoolean, true)
@@ -89,6 +91,12 @@ class LastPage : BaseActivity() {
         App.prefs.getBoolean(thirtySecondBoolean, true)
         App.prefs.getBoolean(thirtyThirdBoolean, true)
         App.prefs.getBoolean(thirtyFourthBoolean, true)
+        App.prefs.getBoolean(thirtyFifthBoolean, true)
+        App.prefs.getBoolean(thirtySixthBoolean, true)
+        App.prefs.getBoolean(thirtySeventhBoolean, true)
+        App.prefs.getBoolean(thirtyEighthBoolean, true)
+        App.prefs.getBoolean(thirtyNinthBoolean, true)
+        App.prefs.getBoolean(fourtyBoolean, true)
 
 
         binding.button.setOnClickListener {
@@ -127,6 +135,12 @@ class LastPage : BaseActivity() {
             App.prefs.setBoolean(thirtySecondBoolean, true)
             App.prefs.setBoolean(thirtyThirdBoolean, true)
             App.prefs.setBoolean(thirtyFourthBoolean, true)
+            App.prefs.setBoolean(thirtyFifthBoolean, true)
+            App.prefs.setBoolean(thirtySixthBoolean, true)
+            App.prefs.setBoolean(thirtySeventhBoolean, true)
+            App.prefs.setBoolean(thirtyEighthBoolean, true)
+            App.prefs.setBoolean(thirtyNinthBoolean, true)
+            App.prefs.setBoolean(fourtyBoolean, true)
 
 
             val intent = Intent(this, ProblemList::class.java)
